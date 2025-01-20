@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       <Toolbar>
         {/* Dark Mode Toggle */}
         <IconButton color="inherit" onClick={() => dispatch(toggleDarkMode())} sx={{ mr: 2 }}>
-          {darkMode ? <Brightness7 /> : <Brightness4 />}
+          {darkMode ? <Brightness4 /> : <Brightness7 />}
         </IconButton>
 
         {/* Header Title */}
