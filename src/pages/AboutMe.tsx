@@ -14,7 +14,7 @@ import {
   Link,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-import { ExpandMore } from '@mui/icons-material'; // MUI icon for expand/collapse
+import { ExpandLess, ExpandMore } from '@mui/icons-material'; // MUI icon for expand/collapse
 import profilePic from '../assets/profile.png';
 
 const AboutMe: React.FC = () => {
@@ -156,7 +156,7 @@ const AboutMe: React.FC = () => {
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Typography variant="body2" sx={{ color: isDarkMode ? '#e0e0e0' : '#424242' }}>
               <IconButton onClick={handleToggleDescription} sx={{ color: isDarkMode ? '#90caf9' : '#1976d2' }}>
-                <ExpandMore />
+              {openDescription ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
               <Link
                 component="button"
@@ -216,13 +216,6 @@ const AboutMe: React.FC = () => {
           </Box>
         </Grid>
       </Grid>
-
-      {/* Footer */}
-      <Box mt={6} textAlign="center" color={isDarkMode ? '#e0e0e0' : '#212121'}>
-        <Typography variant="body2" sx={{ fontWeight: 500 }}>
-          &copy; {new Date().getFullYear()} Solomon Sefiw. All Rights Reserved.
-        </Typography>
-      </Box>
     </Box>
   );
 };
