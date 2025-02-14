@@ -14,11 +14,7 @@ import {
   Brightness7,
   AccountCircle, // Profile Icon
   Work,          // Projects Icon
- // Skills,        // Skills Icon (Material Icons have a 'work' icon for this purpose)
-  Person,        // Contact Icon
-  Menu as MenuIcon,
   Phone,
-  BrandingWatermark,
   PinDropRounded,
 } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../features/hooks';
