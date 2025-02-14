@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { EmailSharp } from '@mui/icons-material';
 
 const Footer: React.FC = () => (
   <motion.div
@@ -47,6 +48,7 @@ const Footer: React.FC = () => (
             fontSize: { xs: '1rem', sm: '1.25rem' },
             marginBottom: 2,
             textTransform: 'uppercase',
+            color : "white"
           }}
         >
           Stay Connected
@@ -83,21 +85,6 @@ const Footer: React.FC = () => (
         >
           <IconButton
             component="a"
-            href="https://github.com/solomonsefiw"
-            target="_blank"
-            sx={{
-              color: 'white',
-              '&:hover': {
-                color: '#ff9800',
-                transform: 'rotate(360deg)',
-                transition: 'transform 0.6s ease',
-              },
-            }}
-          >
-            <GitHubIcon fontSize="large" />
-          </IconButton>
-          <IconButton
-            component="a"
             href="https://linkedin.com/in/solomonsefiw"
             target="_blank"
             sx={{
@@ -111,6 +98,37 @@ const Footer: React.FC = () => (
           >
             <LinkedInIcon fontSize="large" />
           </IconButton>
+          <IconButton
+            component="a"
+            href="mailto:solomonosefiw91@gmail.com"
+            target="_blank"
+            sx={{
+              color: 'white',
+              '&:hover': {
+                color: '#0077b5',
+                transform: 'rotate(360deg)',
+                transition: 'transform 0.6s ease',
+              },
+            }}
+          >
+            <EmailSharp fontSize="large" />
+          </IconButton>
+          <IconButton
+            component="a"
+            href="https://github.com/solomonsefiw"
+            target="_blank"
+            sx={{
+              color: 'white',
+              '&:hover': {
+                color: '#ff9800',
+                transform: 'rotate(360deg)',
+                transition: 'transform 0.6s ease',
+              },
+            }}
+          >
+            <GitHubIcon fontSize="large" />
+          </IconButton>
+
           <IconButton
             component="a"
             href="https://twitter.com/solomonsefiw"

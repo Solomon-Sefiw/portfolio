@@ -46,12 +46,18 @@ const Projects: React.FC = () => {
   };
 
   return (
+
     <Box
       mt={4}
-      px={2}
       sx={{
-        backgroundColor: isDarkMode ? '#121212' : '#f5f5f5',
-        py: 4,
+        background: `linear-gradient(135deg, ${
+          isDarkMode ? '#1e293b' : '#e3f2fd'
+        }, ${isDarkMode ? '#0f172a' : '#ffffff'})`,
+        position: 'relative',
+        overflow: 'hidden',
+        py: 8,
+        px: 3,
+        color: isDarkMode ? '#e0e0e0' : '#212121',
       }}
     >
       <Typography
