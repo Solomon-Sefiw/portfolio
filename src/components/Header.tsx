@@ -20,7 +20,7 @@ import {
   AccountCircle,
   Work,
   Phone,
-  PinDropRounded,
+
   Edit,
   Logout,
   DownhillSkiing,
