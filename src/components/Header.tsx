@@ -23,6 +23,7 @@ import {
   PinDropRounded,
   Edit,
   Logout,
+  DownhillSkiing,
 } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../features/hooks';
 import { toggleDarkMode } from '../features/themeSlice';
@@ -35,8 +36,8 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { label: 'About Me', href: '#about', icon: <AccountCircle /> },
-    { label: 'Skills', href: '#skills', icon: <Work /> },
-    { label: 'Projects', href: '#projects', icon: <PinDropRounded /> },
+    { label: 'Skills', href: '#skills', icon: < DownhillSkiing/> },
+    { label: 'Projects', href: '#projects', icon: < Work  /> },
     { label: 'Contact', href: '#contact', icon: <Phone /> },
   ];
 
