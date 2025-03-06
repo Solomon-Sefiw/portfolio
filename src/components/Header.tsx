@@ -20,7 +20,6 @@ import {
   AccountCircle,
   Work,
   Phone,
-
   Edit,
   Logout,
   DownhillSkiing,
@@ -36,8 +35,8 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { label: 'About Me', href: '#about', icon: <AccountCircle /> },
-    { label: 'Skills', href: '#skills', icon: < DownhillSkiing/> },
-    { label: 'Projects', href: '#projects', icon: < Work  /> },
+    { label: 'Skills', href: '#skills', icon: <DownhillSkiing /> },
+    { label: 'Projects', href: '#projects', icon: <Work /> },
     { label: 'Contact', href: '#contact', icon: <Phone /> },
   ];
 
@@ -96,7 +95,13 @@ const Header: React.FC = () => {
               label={item.label}
               icon={item.icon}
               href={item.href}
-              sx={{ color: darkMode ? '#fff' : '#1976d2' }}
+              sx={{
+                color: darkMode ? '#fff' : '#1976d2',
+                '&.Mui-selected': {
+                  color: darkMode ? '#90caf9' : '#0d47a1', // Highlight selected item
+                  fontWeight: 'bold',
+                },
+              }}
             />
           ))}
         </BottomNavigation>
