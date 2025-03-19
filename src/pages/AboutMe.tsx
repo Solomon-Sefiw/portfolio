@@ -112,7 +112,7 @@ const AboutMe: React.FC = () => {
               Solomon Sefiw
             </Typography>
             <Typography variant="h6" color="textSecondary" mb={2}>
-              Full Stack Developer | 2+ Years of Experience
+              Full Stack Developer | 7+ Years of Experience
             </Typography>
           </motion.div>
         </Grid>
